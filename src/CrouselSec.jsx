@@ -1,5 +1,5 @@
 import React from 'react'
-import CrouselDiv from './components/crouselDiv'
+import CrouselDiv from './components/crouselDiv.jsx'
 
 const CrouselSec = ({data}) => {
   return (
