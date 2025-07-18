@@ -10,7 +10,7 @@ const App = () => {
 
 
   useEffect(()=>{
-    fetch("https://supreme-fellowship-a9b7703297.strapiapp.com/api/global").then((res)=> res.json())
+    fetch("http://10.241.65.202:1337/api/global").then((res)=> res.json())
     .then((data)=> setData(data.data))
     .catch(err => console.error("eror", err));
   },[]);

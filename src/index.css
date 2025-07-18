@@ -3,7 +3,9 @@
 
 
 @theme{
-    --font-myfont : Plus Jakarta Sans,sans-serif
+    --font-myfont : Plus Jakarta Sans,sans-serif;
+    --color-primary-color : #060237;
+    --color-second-color : #d3c3f8
 }
 
 
@@ -17,7 +19,9 @@
     }
   }
 
-  .animate-slideLoop {
-    animation: slideLoop 12s linear infinite;
+  .animate-slideLooplg {
+    animation: slideLoop 8s linear infinite;
   }
 }
+
+

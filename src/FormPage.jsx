@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 const FormPage = ({ data }) => {
   const [formData, setFormData] = useState("");
   useEffect(() => {
-    fetch("https://supreme-fellowship-a9b7703297.strapiapp.com/api/fomr-input").then((apiData) => apiData.json())
+    fetch("http://l0.241.65.202:1337/api/fomr-input").then((apiData) => apiData.json())
       .then((data) => setFormData(data.data))
       .catch((err) => console.error(err))
   }, []);
