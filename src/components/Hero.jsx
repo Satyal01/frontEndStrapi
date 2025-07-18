@@ -43,9 +43,9 @@ const Hero = ({ data }) => {
                 </div>
             </div>
             {/* right container  */}
-            <div className=' lg:w-2/5 bg-red-200 flex justify-end'>
+            <div className=' lg:w-2/5  flex justify-end'>
                 <img className='hidden lg:block' src={data.imgUrl} alt="#" />
-                <div className='pl-5 lg:hidden   lg:w-3/5 '>
+                <div className='pl-3 lg:hidden   lg:w-3/5 '>
                     <div className='flex flex-col   gap-5'>
                         <div className='text-3xl/8 font-bold '>
                             {data.HeroHeading}
@@ -54,15 +54,15 @@ const Hero = ({ data }) => {
                             {data.Herodescription}
 
                         </div>
-                        <div className='pl-4  '  >
+                        <div className='pl-4'  >
                             {
                                 data.points.map((item, i) => {
                                     return (
-                                        <div key={i} className='flex gap-4 items-center  font-nomal font-myfont'>
-                                            <div className='w-4 mb-2'>
+                                        <div key={i} className='flex mb-2 gap-4 items-center   font-nomal font-myfont'>
+                                            <div className='w-4 mb-2  mt-2'>
                                                 <img src="https://cdn.prod.website-files.com/653b9d5d88756f8574352cb0/6707981d6373cf86d09d4db5_Vector.svg" alt="#" />
                                             </div>
-                                            <div>
+                                            <div className=' '>
                                                 {item.content}
                                             </div>
                                         </div>
@@ -86,3 +86,7 @@ const Hero = ({ data }) => {
 }
 
 export default Hero;
+
+
+
+

@@ -1,21 +1,22 @@
 import React from 'react'
+import Button from "./Button"
 
 const Cards = ({data}) => {
   return (
-    <div className=' mt-20 flex flex-col gap-10 items-center'>
-      <div className='text-4xl/10 w-[58%] text-center font-bold text-[#060237]'>
+    <div className=' mt-20 flex flex-col gap-5 lg:gap-10 lg:items-center'>
+      <div className=' pl-4 lg:pl-0 text-3xl lg:text-4xl/10 lg:w-[58%] lg:text-center font-bold text-[#060237]'>
         {data.heading}
       </div>
       {/* cards */}
-      <div className=' flex justify-around gap-20 w-full' >
+      <div className=' flex flex-col lg:flex-row  justify-between items-center lg:justify-around  gap-5 lg:gap-20 w-full' >
         {
-          data.cards.map((card, index)=>{
+          data.cards.map((card)=>{
             return (
-              <div key={index} className=' bg-[#f6f3ff] p-2 w-1/2 flex flex-col gap-4  border rounded-2xl'>
-                <div className='w-50 pl-4 py-5'>
+              <div key={card.id} className=' bg-cards-bgcolor ml-2 sm:p-2 md:p-0 w-[18rem] lg:w-1/2 flex flex-col gap-4  border rounded-2xl'>
+                <div className='w-25 lg:w-50  pl-4 py-3 lg:py-5'>
                   <img src={card.cardImageLink[0].imageLink} alt="card.cardImageLink.id" />
                 </div>
-                <div className='pl-4 text-4xl text-[#060237] font-bold '>
+                <div className='text-2xl pl-4 lg:text-4xl text-[#060237] font-bold '>
                   {card.cardHeading}
                 </div>
                 <div className='pl-4'>
@@ -34,7 +35,7 @@ const Cards = ({data}) => {
             )
           })
         }
-      </div>
+        </div>
     </div>
   )
 }

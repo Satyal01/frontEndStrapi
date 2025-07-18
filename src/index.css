@@ -5,7 +5,9 @@
 @theme{
     --font-myfont : Plus Jakarta Sans,sans-serif;
     --color-primary-color : #060237;
-    --color-second-color : #d3c3f8
+    --color-second-color : #d3c3f8;
+    --color-button-bgcolor : #9590e4;
+    --color-cards-bgcolor : #f6f3ff
 }
 
 
